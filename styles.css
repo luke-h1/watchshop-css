@@ -1,0 +1,222 @@
+* { 
+    box-sizing: border-box;
+}
+
+
+body { 
+    margin: 0 ; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 1rem ; 
+    color: #404040 ; 
+    text-align: center;
+}
+
+h1 { 
+    font-size: 2.2rem ; 
+    font-weight: 300 ; 
+    color: #fff ; 
+    margin: 0em 0 ; 
+}
+
+h2 { 
+    font-size: 1.4rem ; 
+    margin: 0 ; 
+}
+
+
+strong { 
+    font-weight: 900 ; 
+}
+
+h1 + p { 
+    font-size: 2.2rem ; 
+    color: #84C922 ; 
+    text-transform: uppercase ; 
+    font-weight: 300 ; 
+    margin: 0 ; 
+}
+
+h2 + p { 
+    color: #84C922 ; 
+    font-weight: 900 ; 
+    font-size: 1.2rem ;
+    margin-top: 0 ; 
+    text-transform: uppercase; 
+}
+
+.top-text { 
+    font-size: 0.6rem ; 
+    color: #fff ; 
+    text-transform: uppercase; 
+    order: -1 ; 
+    border-top: 5px solid #C15C77 ; 
+    border-image: linear-gradient(to left, #c6ffdd, #fbd786, #f7797d) 1; 
+    font-weight: 900 ; 
+    padding-top: 3px ; 
+    letter-spacing: 0.1em ; 
+}
+/* 
+#c6ffdd
+→ 
+#fbd786
+→ 
+#f7797d
+*/ 
+
+.fine-print { 
+    font-size: 0.7rem ; 
+    letter-spacing: 0.1em ; 
+}
+
+
+.intro { 
+    background-color: #404040 ; 
+    background-image: url("/static/apple-watch.jpg"); 
+    padding: 0em 0.5em 2em ; 
+    background-repeat: no-repeat ; 
+    background-size: cover ; 
+    background-position: center; 
+    background-blend-mode: overlay ; 
+
+/* potential color scheme ??? */ 
+
+  /*     border-image: linear-gradient(to left, #ff713b, #ffa51d) 1; with 
+         background-blend-mode: screen */ 
+}
+
+
+.container { 
+    max-width: 400px ; 
+    margin: 0 auto ;  
+}
+
+
+
+.container-intro { 
+    display: flex ; 
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 50vh;
+}
+
+
+
+/* Main content */ 
+
+.main-content { 
+    padding: 2em 1em ; 
+   /* background-image: url("/static/rolex.jpg") ; 
+    background-repeat: no-repeat ; 
+    background-size: cover ; 
+    background-position: center; 
+    background-blend-mode: screen ; */ 
+}
+
+
+/* Media queries */ 
+
+@media (min-width: 500px) { 
+    body { 
+        font-size: 1.2rem ; 
+        display: flex ; 
+    } 
+
+    h1 { 
+        font-size: 3.5rem ; 
+    }
+
+    h2,
+    h1 + p { 
+        font-size: 1.7rem ; 
+    }
+
+    .intro, 
+    .main-content { 
+        width: 50% ; 
+        min-height: 100vh;
+    }
+
+    .main-content { 
+        display:flex ; 
+        flex-direction: column; 
+        justify-content: center; 
+        text-align: center; 
+        align-items: center;
+    }
+
+
+    .container-intro { 
+        height: 80% ; 
+    }
+}
+
+
+/* signup form */ 
+
+.register { 
+    width: 90% ; 
+    max-width: 300px;
+    margin-left: 3rem ; 
+}
+
+input,
+.btn-main { 
+    width: 100% ; 
+    border-radius: 2px;
+}
+
+
+input { 
+    margin-bottom: 0.75em ; 
+    font-family: inherit ; 
+    text-align: inherit; 
+    padding: 0.3em ; 
+    border: 1px solid #404040 ; 
+    border-radius: 3px;
+}
+
+.btn { 
+    display: inline-block ; 
+    padding: 0.8em 1em ; 
+    text-transform: uppercase; 
+    font-size: 0.6rem ; 
+    font-weight: 900 ; 
+    letter-spacing: 1px ; 
+    border: 0 ; 
+    cursor: pointer ; 
+}
+
+.btn-main { 
+    background-image: linear-gradient(to left, #b92b27, #1565c0 ); 
+}
+
+/* 
+#b92b27
+→ 
+#1565c0 
+*/ 
+
+.btn-main:hover,
+.btn-main:focus { 
+    color: #000 ; 
+    transform: scale(1.1) ; 
+    transition: 1s ; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
